@@ -16,8 +16,6 @@ const Signup = () => {
       contact: e.target.elements.contact.value,
     });
 
-
-
     var config = {
       method: "post",
       url: "http://localhost:8080/users/signup/",
@@ -26,8 +24,6 @@ const Signup = () => {
       },
       data: data,
     };
-
-
 
     axios(config)
       .then(function (response) {
@@ -40,8 +36,6 @@ const Signup = () => {
       });
   };
 
-
-  
   const reducer = (state, action) => {
     switch (action.type) {
       case "success":
