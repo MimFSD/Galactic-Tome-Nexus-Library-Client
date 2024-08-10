@@ -24,13 +24,7 @@ function App() {
       <div className="Maincontainer">
         <Sidebar></Sidebar>
         {match}
-        {/* <div className="sidebar">
-            <label className="Home">Home</label>
-            <br></br>
-            <label className="Search">Search</label>
-
-          </div> */}
-      </div>
+       
     </div>
   );
 }
