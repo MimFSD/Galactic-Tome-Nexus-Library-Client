@@ -9,9 +9,9 @@ import { Link } from "react-router-dom";
 import { signOut } from "firebase/auth";
 const Navbar = () => {
   const [loggedInUser, setLoggedInUser] = useContext(UserContext);
-  // console.log(setLoggedInUser);
+
   const [user] = useAuthState(firebaseConfig)
-  // console.log('user', user)
+
   const logout = () => {
       signOut(firebaseConfig)
   }
