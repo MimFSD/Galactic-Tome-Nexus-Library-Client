@@ -28,7 +28,6 @@ function App() {
             <label className="Home">Home</label>
             <br></br>
             <label className="Search">Search</label>
-
           </div> */}
       </div>
     </div>
