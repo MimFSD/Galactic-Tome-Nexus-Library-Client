@@ -6,6 +6,8 @@ function Sidebar() {
   return (
     <div className="Sidebar">
       <ul className="SidebarList">
+
+
         {SidebarData.map((value, key) => {
           return (
             <li
@@ -18,6 +20,8 @@ function Sidebar() {
                 window.location.pathname = value.link;
               }}
             >
+
+              
               <div id="icon">{value.icon}</div>
               <div id="title"> {value.title}</div>
             </li>
