@@ -53,5 +53,3 @@
 ### 12. **Help and Support:**
    - **User Guides:** Provide user manuals and guides for using the system.
    - **Support:** Option for users to contact support for help with issues. 
-
-These features can be tailored based on the specific needs of the library, whether it's a school library, public library, or a private organization's library.
