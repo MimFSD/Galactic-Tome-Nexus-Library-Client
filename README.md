@@ -1,6 +1,6 @@
 ## Library Management System
 * Galactic Tome Nexus Library 
-
+## Features
 ### 1. **User Management:**
    - **User Registration and Login:** Allows users to register, log in, and manage their profiles.
    - **User Roles:** Different roles such as Admin, Librarian, and Member/Student with respective permissions.
