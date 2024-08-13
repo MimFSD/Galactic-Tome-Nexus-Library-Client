@@ -103,3 +103,18 @@ return (
                 </div>
                 <div className="form-control w-full">
                     <label className="label"></label>
+                    <span className="label-text">Category</span>
+                    </label>
+                    <label className="input-group">
+                        <input type="text" name="Category" defaultValue={Category} placeholder="Category" className="input input-bordered w-full" />
+                    </label>
+                </div>
+                <div>
+                    <input type="submit" value="Update Book" className="btn btn-block bg-black text-white mt-8" />
+                </div>
+            </form>
+        </div>
+    );
+};
+
+export default AllBooksUpdate;
