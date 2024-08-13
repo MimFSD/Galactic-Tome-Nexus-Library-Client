@@ -92,4 +92,14 @@ return (
                             <input type="text" name="description" defaultValue={description} placeholder="Enter Product Description" className="input input-bordered w-full" />
                         </label>
                     </div>
-                    
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text">Rating</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="rating" defaultValue={rating} placeholder="Rating" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                </div>
+                <div className="form-control w-full">
+                    <label className="label"></label>
