@@ -15,12 +15,12 @@ const BestSellingBook = () => {
         setShowAll(true);
     }
 
-    const displayedCards = showAll ? allCart : allCart.slice(0, 3);
+    const displayedCards =  showAll ? allCart :  allCart.slice(0, 3);
 
     return (
         <div>
             <div className="flex justify-between">
-                <h1 className=" font-bold text-3xl text-red-600 mb-5 ">Best Selling Book</h1>
+                <h1 className=" font-bold text-3xl text-red-600 mb-5 ">Best  Selling   Book</h1>
                 {!showAll && (
                     <div className="text-center">
                         <button onClick={handleShowAllCart} className="btn btn-secondary">Show All</button>
