@@ -18,7 +18,20 @@ const BestSellingBook = () => {
     const displayedCards = showAll ? allCart : allCart.slice(0, 3);
 
     return (
-        
+        <div>
+            <div className="flex justify-between">
+                <h1 className=" font-bold text-3xl text-red-600 mb-5 ">Best Selling Book</h1>
+                {!showAll && (
+                    <div className="text-center">
+                        <button onClick={handleShowAllCart} className="btn btn-secondary">Show All</button>
+                    </div>
+                )}
+            </div>
+            <div className="grid md:grid-cols-3 gap-2 ">
+                {displayedCards.map(item => <SellingBookDetails key={item.id} item={item} />)}
+
+            </div>
+        </div>
     );
 };
 
