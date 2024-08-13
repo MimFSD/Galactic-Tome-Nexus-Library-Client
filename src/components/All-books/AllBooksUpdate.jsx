@@ -26,44 +26,44 @@ const AllBooksUpdate = () => {
             },
             body: JSON.stringify(updateBook)
         })
-
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            if (data.modifiedCount) {
-                Swal.fire(
-                    'Good job!',
-                    'Update Product succesfully',
-                    'success'
-                )
-            }
-        })
-}
-
-return (
-    <div className="bg-[#F4F3F0] p-20">
-        <h2 className="text-3xl text-green-500 font-bold">Update Book of :{name}</h2>
-        <form onSubmit={handleClickUpdate} >
-            {/* form name and author name row */}
-            <div className="  md:flex ">
-                <div className="form-control w-full">
-                    <label className="label">
-                        <span className="label-text"> Name</span>
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="name" defaultValue={name} placeholder=" Name" className="input input-bordered w-full" />
-                    </label>
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+                if (data.modifiedCount) {
+                    Swal.fire(
+                        'Good job!',
+                        'Update Product succesfully',
+                        'success'
+                    )
+                }
+            })
+    }
+    
+    return (
+        <div className="bg-[#F4F3F0] p-20">
+            <h2 className="text-3xl text-green-500 font-bold">Update Book of :{name}</h2>
+            <form onSubmit={handleClickUpdate} >
+                {/* form name and author name row */}
+                <div className="  md:flex ">
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text"> Name</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="name" defaultValue={name} placeholder=" Name" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text">Author</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="Author" defaultValue={Author} placeholder="Author Name" className="input input-bordered w-full" />
+                        </label>
+                    </div>
                 </div>
-                <div className="form-control w-full">
-                    <label className="label">
-                        <span className="label-text">Author</span>
-                    </label>
-                    <label className="input-group">
-                        <input type="text" name="Author" defaultValue={Author} placeholder="Author Name" className="input input-bordered w-full" />
-                    </label>
-                </div>
-            </div>
-              <div className="md:flex ">
+                {/* form image and price row */}
+                <div className="md:flex ">
                     <div className="form-control w-full">
                         <label className="label">
                             <span className="label-text">Image</span>
@@ -101,8 +101,8 @@ return (
                     </div>
                 </div>
                 <div className="form-control w-full">
-                    <label className="label"></label>
-                    <span className="label-text">Category</span>
+                    <label className="label">
+                        <span className="label-text">Category</span>
                     </label>
                     <label className="input-group">
                         <input type="text" name="Category" defaultValue={Category} placeholder="Category" className="input input-bordered w-full" />
