@@ -63,7 +63,6 @@ return (
                     </label>
                 </div>
             </div>
-              {/* form image and price row */}
               <div className="md:flex ">
                     <div className="form-control w-full">
                         <label className="label">
