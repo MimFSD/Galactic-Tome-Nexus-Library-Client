@@ -63,3 +63,33 @@ return (
                     </label>
                 </div>
             </div>
+              {/* form image and price row */}
+              <div className="md:flex ">
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text">Image</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="image" defaultValue={image} placeholder="Image URL" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text">Quantity of the book</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="Quantity" defaultValue={Quantity} placeholder="Quantity of the book" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                </div>
+                {/* form short Description and Rating row */}
+                <div className="md:flex  ">
+                    <div className="form-control w-full">
+                        <label className="label">
+                            <span className="label-text">Short Description</span>
+                        </label>
+                        <label className="input-group">
+                            <input type="text" name="description" defaultValue={description} placeholder="Enter Product Description" className="input input-bordered w-full" />
+                        </label>
+                    </div>
+                    
